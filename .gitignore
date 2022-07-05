@@ -15,7 +15,6 @@ coverage
 *.local
 
 package-lock.json
-tailwind.css
 
 /cypress/videos/
 /cypress/screenshots/
