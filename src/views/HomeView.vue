@@ -1,9 +1,15 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import WelcomeSection from '../components/WelcomeSection.vue'
+import MenuSection from '../components/MenuSection.vue'
+import FooterSection from '../components/FooterSection.vue';
+import StructuredData from '../components/StructuredData.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <WelcomeSection />
+    <MenuSection />
   </main>
+  <FooterSection />
+  <StructuredData />
 </template>

@@ -16,7 +16,7 @@ module.exports = {
         'inspire-white': '#FAFAFA', // #FDFDFF andre / #FAFAFA instagram
         'inspire-blue-gray': '#B0C4CF', // Verf kleur voorgevel (zie cover photo mobiel)
         'instagram-blue': '#0095F6',
-        'instagram-blue-dark': '#0074CC',
+        'instagram-blue-dark': '#0074CC'
       },
       fontFamily: {
         sans: '"Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
@@ -25,9 +25,6 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-hyphens"),
-    plugin(function ({ addVariant }) {
-      // Add a `second` variant, ie. `second:ml-0`
-      addVariant('second', '&:nth-child(2)')
-    })
+    require('tailwind-scrollbar-hide')
   ]
 }
