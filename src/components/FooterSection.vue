@@ -6,6 +6,7 @@ const openingstijden = dataStore.openingstijden
 const gewijzigd = dataStore.openingstijdenGewijzigd
 const notitie = dataStore.openingstijdenNotitie
 const socials = dataStore.socials
+const contact = dataStore.contact
 </script>
 
 <template>
@@ -18,17 +19,17 @@ const socials = dataStore.socials
         <div class="space-y-4">
           <h2 class="font-black uppercase tracking-normal text-inspire-orange">Contact</h2>
           <p class="font-light text-inspire-brown-dark">
-            <strong>Inspire Coffee Company</strong><br />
-            Veemarktstraat 4<br />
-            4811 ZE Breda
+            <strong>{{ contact.bedrijfsnaam }}</strong><br />
+            {{ contact.adres }}<br />
+            {{ contact.postcode }} {{ contact.plaats }}
           </p>
           <nav class="font-light text-inspire-brown-dark">
             <ul>
               <li class="transition-opacity duration-200 hover:opacity-75 focus:opacity-75 active:opacity-100">
-                <a href="tel:0031765153272"> +31 (0)76 515 3272 </a>
+                <a :href="`tel:${contact.telHref}`">{{ contact.tel }}</a>
               </li>
               <li class="transition-opacity duration-200 hover:opacity-75 focus:opacity-75 active:opacity-100">
-                <a href="mailto:breda@inspirecoffee.com"> breda@inspirecoffee.com </a>
+                <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
               </li>
             </ul>
           </nav>
