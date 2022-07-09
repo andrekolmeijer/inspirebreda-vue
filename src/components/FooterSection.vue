@@ -1,12 +1,7 @@
 <script setup>
 import { useDataStore } from '../stores/DataStore'
 
-const dataStore = useDataStore()
-const openingstijden = dataStore.openingstijden
-const gewijzigd = dataStore.openingstijdenGewijzigd
-const notitie = dataStore.openingstijdenNotitie
-const socials = dataStore.socials
-const contact = dataStore.contact
+const { openingstijden, openingstijdenGewijzigd, openingstijdenNotitie, socials, contact } = useDataStore()
 </script>
 
 <template>
@@ -55,7 +50,7 @@ const contact = dataStore.contact
             </tr>
           </table>
           <p class="text-sm font-light italic text-inspire-brown-dark sm:hidden">
-            <span v-text="notitie.notitie"></span>
+            <span v-text="openingstijdenNotitie.notitie"></span>
           </p>
         </div>
         <div class="space-y-4">
@@ -90,13 +85,13 @@ const contact = dataStore.contact
       <div class="flex justify-evenly">
         <p class="mt-8 hidden text-sm font-light italic text-inspire-brown-dark sm:block">
           <span
-            v-text="notitie.notitie"
+            v-text="openingstijdenNotitie.notitie"
           ></span>
         </p>
         <p class="mt-8 text-center text-sm font-light italic text-inspire-brown-dark">
           Bijgewerkt:
           <span
-            v-text="gewijzigd.datum"
+            v-text="openingstijdenGewijzigd.datum"
           ></span>
         </p>
       </div>

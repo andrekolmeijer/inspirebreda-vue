@@ -1,8 +1,7 @@
 <script setup>
 import { useDataStore } from '../stores/DataStore'
 
-const dataStore = useDataStore()
-const menukaarten = dataStore.menukaarten
+const { menukaarten } = useDataStore()
 </script>
 
 <template>

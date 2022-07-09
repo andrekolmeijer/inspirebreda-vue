@@ -1,8 +1,7 @@
 <script setup>
 import { useDataStore } from '../stores/DataStore'
 
-const dataStore = useDataStore()
-const images = dataStore.images
+const { images } = useDataStore()
 </script>
 
 <template>
