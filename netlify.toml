@@ -1,0 +1,13 @@
+[context.production]
+  command = "npm run build"
+
+[context.production.environment]
+  NODE_ENV = "production"
+  BASE_URL = "https://inspirebreda.nl"
+
+[context.development]
+  command = "npm run ntl-dev"
+
+[context.development.environment]
+  NODE_ENV = "development"
+  BASE_URL = "https://development.inspirebreda.nl"
