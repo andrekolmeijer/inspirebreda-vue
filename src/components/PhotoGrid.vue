@@ -1,7 +1,50 @@
 <script setup>
-import { useDataStore } from '../stores/DataStore'
+const imgUrl = new URL('../assets/img/carousel/carousel-1.jpg', import.meta.url).href
 
-const { images } = useDataStore()
+console.log(imgUrl);
+
+const images = [
+  {
+    src: 'src/assets/img/carousel/carousel-1.jpg',
+    span: 'col-span-4 row-span-2',
+    alt: 'Twee maal Dark & Stormy cocktail'
+  },
+  {
+    src: 'src/assets/img/carousel/carousel-2.jpg',
+    span: 'col-span-3 row-span-2',
+    alt: 'Twee White Russians die bereid worden'
+  },
+  {
+    src: 'src/assets/img/carousel/carousel-3.jpg',
+    span: 'col-span-5 row-span-2',
+    alt: 'Jehan en Rob maken Espresso Martini'
+  },
+  {
+    src: 'src/assets/img/carousel/carousel-4.jpg',
+    span: 'col-span-4 row-span-2',
+    alt: 'Inspire specialiteit C-star met kruidnoten'
+  },
+  {
+    src: 'src/assets/img/carousel/carousel-5.jpg',
+    span: 'col-span-4 row-span-2',
+    alt: 'Een yogurt, lemon and lime swirl cake'
+  },
+  {
+    src: 'src/assets/img/carousel/carousel-6.jpg',
+    span: 'col-span-4 row-span-1',
+    alt: 'Bovenverdieping Inspire Breda'
+  },
+  {
+    src: 'src/assets/img/carousel/carousel-7.jpg',
+    span: 'col-span-2 row-span-1',
+    alt: 'Martini Espresso van bovenaf'
+  },
+  {
+    src: 'src/assets/img/carousel/carousel-8.jpg',
+    span: 'col-span-2 row-span-1',
+    alt: 'Verse appeltaart'
+  }
+]
 </script>
 
 <template>
@@ -14,7 +57,7 @@ const { images } = useDataStore()
       :class="image.span">
       <img
         class="h-full w-full rounded object-cover"
-        :src="image.src"
+        :src="imgUrl"
         :alt="image.alt" />
     </div>
   </div>
