@@ -103,7 +103,6 @@ const {
       <div
         class="mt-8 w-full border-t border-inspire-brown-dark border-opacity-25 text-center text-sm font-light text-inspire-brown-dark">
         <p
-          x-data
           class="pt-8">
           Copyright &copy;
           <span v-text="new Date().getFullYear()"></span> Inspire Coffee
