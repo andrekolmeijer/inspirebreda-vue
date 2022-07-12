@@ -9,5 +9,5 @@
   command = "npm run ntl-dev"
 
 [context.development.environment]
-  NODE_ENV = "production"
+  NODE_ENV = "development"
   BASE_URL = "https://development.inspirebreda.nl"
