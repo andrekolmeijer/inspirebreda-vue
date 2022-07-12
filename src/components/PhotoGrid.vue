@@ -1,46 +1,48 @@
 <script setup>
-const imgUrl = new URL('../assets/img/carousel/carousel-1.jpg', import.meta.url).href
+// https://stackoverflow.com/questions/70591125/replacement-for-require-in-vuejs-3-with-vite-for-image-array
 
-console.log(imgUrl);
+function getImageUrl(name) {
+  return new URL(`../assets/img/${name}.jpg`, import.meta.url).href
+}
 
 const images = [
   {
-    src: 'src/assets/img/carousel/carousel-1.jpg',
+    src: 'carousel-1',
     span: 'col-span-4 row-span-2',
     alt: 'Twee maal Dark & Stormy cocktail'
   },
   {
-    src: 'src/assets/img/carousel/carousel-2.jpg',
+    src: 'carousel-2',
     span: 'col-span-3 row-span-2',
     alt: 'Twee White Russians die bereid worden'
   },
   {
-    src: 'src/assets/img/carousel/carousel-3.jpg',
+    src: 'carousel-3',
     span: 'col-span-5 row-span-2',
     alt: 'Jehan en Rob maken Espresso Martini'
   },
   {
-    src: 'src/assets/img/carousel/carousel-4.jpg',
+    src: 'carousel-4',
     span: 'col-span-4 row-span-2',
     alt: 'Inspire specialiteit C-star met kruidnoten'
   },
   {
-    src: 'src/assets/img/carousel/carousel-5.jpg',
+    src: 'carousel-5',
     span: 'col-span-4 row-span-2',
     alt: 'Een yogurt, lemon and lime swirl cake'
   },
   {
-    src: 'src/assets/img/carousel/carousel-6.jpg',
+    src: 'carousel-6',
     span: 'col-span-4 row-span-1',
     alt: 'Bovenverdieping Inspire Breda'
   },
   {
-    src: 'src/assets/img/carousel/carousel-7.jpg',
+    src: 'carousel-7',
     span: 'col-span-2 row-span-1',
     alt: 'Martini Espresso van bovenaf'
   },
   {
-    src: 'src/assets/img/carousel/carousel-8.jpg',
+    src: 'carousel-8',
     span: 'col-span-2 row-span-1',
     alt: 'Verse appeltaart'
   }
@@ -57,7 +59,7 @@ const images = [
       :class="image.span">
       <img
         class="h-full w-full rounded object-cover"
-        :src="imgUrl"
+        :src="getImageUrl(image.src)"
         :alt="image.alt" />
     </div>
   </div>

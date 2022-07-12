@@ -2,32 +2,6 @@ import { defineStore } from 'pinia'
 
 export const useDataStore = defineStore('DataStore', {
   state: () => ({
-    images: [
-      { src: 'src/assets/img/carousel-1.jpg', span: 'col-span-4 row-span-2', alt: 'Twee maal Dark & Stormy cocktail' },
-      {
-        src: 'src/assets/img/carousel-2.jpg',
-        span: 'col-span-3 row-span-2',
-        alt: 'Twee White Russians die bereid worden'
-      },
-      {
-        src: 'src/assets/img/carousel-3.jpg',
-        span: 'col-span-5 row-span-2',
-        alt: 'Jehan en Rob maken Espresso Martini'
-      },
-      {
-        src: 'src/assets/img/carousel-4.jpg',
-        span: 'col-span-4 row-span-2',
-        alt: 'Inspire specialiteit C-star met kruidnoten'
-      },
-      {
-        src: 'src/assets/img/carousel-5.jpg',
-        span: 'col-span-4 row-span-2',
-        alt: 'Een yogurt, lemon and lime swirl cake'
-      },
-      { src: 'src/assets/img/carousel-6.jpg', span: 'col-span-4 row-span-1', alt: 'Bovenverdieping Inspire Breda' },
-      { src: 'src/assets/img/carousel-7.jpg', span: 'col-span-2 row-span-1', alt: 'Martini Espresso van bovenaf' },
-      { src: 'src/assets/img/carousel-8.jpg', span: 'col-span-2 row-span-1', alt: 'Verse appeltaart' }
-    ],
     menukaarten: [
       { href: '/menu/lunch-1.pdf', src: 'src/assets/img/lunch-1.jpg', name: 'Lunchkaart' },
       { href: '/menu/drank-1.pdf', src: 'src/assets/img/drank-1.jpg', name: 'Koffie & Warm' },
@@ -71,12 +45,6 @@ export const useDataStore = defineStore('DataStore', {
       email: 'breda@inspirecoffee.com'
     }
   }),
-  getters: {
-    doubleCount: state => state.counter * 2
-  },
-  actions: {
-    increment() {
-      this.counter++
-    }
-  }
+  getters: {},
+  actions: {}
 })
