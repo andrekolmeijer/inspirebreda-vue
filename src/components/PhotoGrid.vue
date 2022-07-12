@@ -2,47 +2,47 @@
 // https://stackoverflow.com/questions/70591125/replacement-for-require-in-vuejs-3-with-vite-for-image-array
 
 function getImageUrl(name) {
-  return new URL(`../assets/img/${name}.jpg`, import.meta.url).href
+  return new URL(`../assets/img/${name}`, import.meta.url).href
 }
 
 const images = [
   {
-    src: 'carousel-1',
+    src: 'carousel-1.jpg',
     span: 'col-span-4 row-span-2',
     alt: 'Twee maal Dark & Stormy cocktail'
   },
   {
-    src: 'carousel-2',
+    src: 'carousel-2.jpg',
     span: 'col-span-3 row-span-2',
     alt: 'Twee White Russians die bereid worden'
   },
   {
-    src: 'carousel-3',
+    src: 'carousel-3.jpg',
     span: 'col-span-5 row-span-2',
     alt: 'Jehan en Rob maken Espresso Martini'
   },
   {
-    src: 'carousel-4',
+    src: 'carousel-4.jpg',
     span: 'col-span-4 row-span-2',
     alt: 'Inspire specialiteit C-star met kruidnoten'
   },
   {
-    src: 'carousel-5',
+    src: 'carousel-5.jpg',
     span: 'col-span-4 row-span-2',
     alt: 'Een yogurt, lemon and lime swirl cake'
   },
   {
-    src: 'carousel-6',
+    src: 'carousel-6.jpg',
     span: 'col-span-4 row-span-1',
     alt: 'Bovenverdieping Inspire Breda'
   },
   {
-    src: 'carousel-7',
+    src: 'carousel-7.jpg',
     span: 'col-span-2 row-span-1',
     alt: 'Martini Espresso van bovenaf'
   },
   {
-    src: 'carousel-8',
+    src: 'carousel-8.jpg',
     span: 'col-span-2 row-span-1',
     alt: 'Verse appeltaart'
   }
