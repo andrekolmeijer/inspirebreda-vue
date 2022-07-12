@@ -1,5 +1,8 @@
 <script setup>
 import { useDataStore } from '../stores/DataStore'
+import IconFacebook from './icons/IconFacebook.vue';
+import IconTwitter from './icons/IconTwitter.vue';
+import IconInstagram from './icons/IconInstagram.vue';
 
 const {
   openingstijden,
@@ -77,14 +80,9 @@ const {
                   :href="social.href"
                   target="_blank"
                   :aria-label="social.label">
-                  <svg
-                    :class="social.svgClass"
-                    class="bi h-8 w-8"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 16 16">
-                    <path :d="social.svgPath" />
-                  </svg>
+                  <IconFacebook v-if="social.label == 'facebook'" />
+                  <IconTwitter v-if="social.label == 'twitter'" />
+                  <IconInstagram v-if="social.label == 'instagram'" />
                 </a>
               </li>
             </ul>
