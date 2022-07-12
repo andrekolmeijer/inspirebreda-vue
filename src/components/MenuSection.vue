@@ -1,7 +1,42 @@
 <script setup>
-import { useDataStore } from '../stores/DataStore'
+// https://stackoverflow.com/questions/70591125/replacement-for-require-in-vuejs-3-with-vite-for-image-array
 
-const { menukaarten } = useDataStore()
+function getImageUrl(name) {
+  return new URL(`../assets/img/${name}`, import.meta.url).href
+}
+
+const menukaarten = [
+  {
+    href: '/menu/lunch-1.pdf',
+    src: 'lunch-1.jpg',
+    name: 'Lunchkaart'
+  },
+  {
+    href: '/menu/drank-1.pdf',
+    src: 'drank-1.jpg',
+    name: 'Koffie & Warm'
+  },
+  {
+    href: '/menu/drank-2.pdf',
+    src: 'drank-2.jpg',
+    name: 'Sap & Frisdrank'
+  },
+  {
+    href: '/menu/drank-3.pdf',
+    src: 'drank-3.jpg',
+    name: 'Bierkaart'
+  },
+  {
+    href: '/menu/drank-4.pdf',
+    src: 'drank-4.jpg',
+    name: 'Wijn & Bubbels'
+  },
+  {
+    href: '/menu/drank-5.pdf',
+    src: 'drank-5.jpg',
+    name: 'Cocktails'
+  }
+]
 </script>
 
 <template>
@@ -25,7 +60,7 @@ const { menukaarten } = useDataStore()
             <div class="space-y-2">
               <img
                 class="h-[300px] rounded-lg shadow-lg sm:transition-shadow sm:duration-200 sm:hover:shadow-xl"
-                :src="menukaart.src"
+                :src="getImageUrl(menukaart.src)"
                 :alt="menukaart.name" />
               <span
                 class="inline-block w-full text-center font-semibold"

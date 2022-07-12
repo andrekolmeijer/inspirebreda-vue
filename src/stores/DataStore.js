@@ -2,14 +2,6 @@ import { defineStore } from 'pinia'
 
 export const useDataStore = defineStore('DataStore', {
   state: () => ({
-    menukaarten: [
-      { href: '/menu/lunch-1.pdf', src: 'src/assets/img/lunch-1.jpg', name: 'Lunchkaart' },
-      { href: '/menu/drank-1.pdf', src: 'src/assets/img/drank-1.jpg', name: 'Koffie & Warm' },
-      { href: '/menu/drank-2.pdf', src: 'src/assets/img/drank-2.jpg', name: 'Sap & Frisdrank' },
-      { href: '/menu/drank-3.pdf', src: 'src/assets/img/drank-3.jpg', name: 'Bierkaart' },
-      { href: '/menu/drank-4.pdf', src: 'src/assets/img/drank-4.jpg', name: 'Wijn & Bubbels' },
-      { href: '/menu/drank-5.pdf', src: 'src/assets/img/drank-5.jpg', name: 'Cocktails' }
-    ],
     openingstijden: [
       { dag: 'Maandag', tijd: '09:00 - 17:00*' },
       { dag: 'Dinsdag', tijd: '09:00 - 17:00*' },
