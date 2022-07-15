@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.9.2",
+    "libphonenumber-js": "^1.10.8",
     "pinia": "^2.0.14",
     "smoothscroll-polyfill": "^0.4.4",
     "tailwind-scrollbar-hide": "^1.1.7",

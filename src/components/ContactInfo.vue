@@ -1,8 +1,10 @@
 <script setup>
 import { useDataStore } from '../stores/DataStore'
+import parsePhoneNumber from 'libphonenumber-js'
 import FooterHeading from './FooterHeading.vue'
 
 const { contact } = useDataStore()
+const phoneNumber = parsePhoneNumber(contact.tel)
 </script>
 
 <template>
@@ -18,7 +20,7 @@ const { contact } = useDataStore()
       <ul>
         <li
           class="transition-opacity duration-200 hover:opacity-75 focus:opacity-75 active:opacity-100">
-          <a :href="`tel:${contact.telHref}`">{{ contact.tel }}</a>
+          <a :href="phoneNumber.getURI()">{{ phoneNumber.formatInternational() }}</a>
         </li>
         <li
           class="transition-opacity duration-200 hover:opacity-75 focus:opacity-75 active:opacity-100">

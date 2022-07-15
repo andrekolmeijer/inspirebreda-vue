@@ -33,7 +33,6 @@ export const useDataStore = defineStore('DataStore', {
       postcode: '4811ZE',
       plaats: 'Breda',
       tel: '+31 (0)76 515 3272',
-      telHref: '0031765153272',
       email: 'breda@inspirecoffee.com'
     }
   }),
