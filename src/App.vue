@@ -15,10 +15,10 @@ smoothscroll.polyfill()
         alt="Inspire Logo" />
     </div>
     <nav class="text-lg font-semibold text-inspire-brown-dark">
-      <ul class="flex space-x-2">
+      <ul class="flex space-x-8">
         <li class="hidden sm:block">
           <a
-            class="py-1 px-3 transition-colors duration-200 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown-dark"
+            class="py-1 transition-colors duration-200 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown-dark"
             href="#menu"
             rel="nofollow">
             menu
@@ -26,7 +26,7 @@ smoothscroll.polyfill()
         </li>
         <li class="hidden sm:block">
           <a
-            class="py-1 px-3 transition-colors duration-200 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown-dark"
+            class="py-1 transition-colors duration-200 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown-dark"
             href="#contact"
             rel="nofollow">
             contact
