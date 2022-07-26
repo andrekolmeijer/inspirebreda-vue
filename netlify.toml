@@ -1,12 +1,12 @@
 [context.production]
-  command = "npm run build"
+  command = "npm run build:prod"
 
 [context.production.environment]
   NODE_ENV = "production"
   VITE_BASE_URL = "https://mijnmacmekkert.nl"
 
 [context.development]
-  command = "npm run ntl-dev"
+  command = "npm run build"
 
 [context.development.environment]
   NODE_ENV = "development"
