@@ -53,7 +53,7 @@ const menukaarten = [
         <li
           v-for="(menukaart, index) in menukaarten"
           :key="index"
-          class="second:snap-start second:pl-8 sm:second:pl-0 flex h-full flex-shrink-0 snap-center snap-always justify-center last:snap-end last:pr-8 sm:transition-transform sm:duration-200 sm:last:pr-0 sm:hover:scale-105">
+          class="first:snap-start first:pl-8 sm:first:pl-0 flex h-full flex-shrink-0 snap-center snap-always justify-center last:snap-end last:pr-8 sm:transition-transform sm:duration-200 sm:last:pr-0 sm:hover:scale-105">
           <a
             :href="menukaart.href"
             target="_blank">
