@@ -3,11 +3,11 @@
 
 [context.production.environment]
   NODE_ENV = "development"
-  VITE_BASE_URL = "https://mijnmacmekkert.nl"
+  VITE_BASE_URL = "https://inspirebreda.nl/"
 
 [context.development]
   command = "npm run build"
 
 [context.development.environment]
   NODE_ENV = "development"
-  VITE_BASE_URL = "https://development.mijnmacmekkert.nl"
+  VITE_BASE_URL = "https://development.inspirebreda.nl/"
