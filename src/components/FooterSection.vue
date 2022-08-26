@@ -31,7 +31,7 @@ const smAndLarger = breakpoints.greater('sm')
         </div>
       </div>
       <div class="flex justify-evenly">
-        <FootNote v-if="smAndLarger"/>
+        <!-- <FootNote v-if="smAndLarger"/> -->
         <p
           class="mt-8 text-center text-sm font-light italic text-inspire-brown-dark">
           Bijgewerkt:

@@ -24,6 +24,6 @@ const smAndLarger = breakpoints.greater('sm')
           v-text="openingstijd.tijd"></td>
       </tr>
     </table>
-    <FootNote v-if="!smAndLarger" />
+    <!-- <FootNote v-if="!smAndLarger" /> -->
   </FooterHeading>
 </template>
