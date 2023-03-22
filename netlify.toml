@@ -11,3 +11,6 @@
 [context.development.environment]
   NODE_ENV = "development"
   VITE_BASE_URL = "https://development.inspirebreda.nl"
+
+[dev]
+  targetPort = 5173
