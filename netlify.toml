@@ -13,5 +13,4 @@
   VITE_BASE_URL = "https://development.inspirebreda.nl"
 
 [dev]
-  targetPort = 5173
-  port=8888
+  targetPort = 3000
