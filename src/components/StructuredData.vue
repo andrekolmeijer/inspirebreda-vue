@@ -40,21 +40,21 @@
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-              "opens": "09:00",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
+              "opens": "08:30",
               "closes": "17:00"
             },
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Friday", "Saturday"],
-              "opens": "08:00",
-              "closes": "20:00"
+              "dayOfWeek": ["Thursday", "Friday", "Saturday"],
+              "opens": "08:30",
+              "closes": "22:00"
             },
             {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": "Sunday",
-              "opens": "10:30",
-              "closes": "20:00"
+              "opens": "10:00",
+              "closes": "18:00"
             }
           ],
           "hasMenu": [
