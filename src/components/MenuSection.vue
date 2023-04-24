@@ -7,49 +7,34 @@ function getImageUrl(name) {
 
 const menukaarten = [
   {
-    href: '/menu/kaart-inspire-4-1.pdf',
-    src: 'kaart-inspire-4-1.jpg',
+    href: '/menu/lunch-1.pdf',
+    src: 'lunch-1.jpg',
+    name: 'Lunchkaart'
+  },
+  {
+    href: '/menu/drank-1.pdf',
+    src: 'drank-1.jpg',
     name: 'Koffie & Warm'
   },
   {
-    href: '/menu/kaart-inspire-4-2.pdf',
-    src: 'kaart-inspire-4-2.jpg',
+    href: '/menu/drank-2.pdf',
+    src: 'drank-2.jpg',
     name: 'Sap & Frisdrank'
   },
   {
-    href: '/menu/kaart-inspire-4-9.pdf',
-    src: 'kaart-inspire-4-9.jpg',
-    name: 'Jamoneria'
-  },
-  {
-    href: '/menu/kaart-inspire-4-3.pdf',
-    src: 'kaart-inspire-4-3.jpg',
+    href: '/menu/drank-3.pdf',
+    src: 'drank-3.jpg',
     name: 'Bierkaart'
   },
   {
-    href: '/menu/kaart-inspire-4-4.pdf',
-    src: 'kaart-inspire-4-4.jpg',
+    href: '/menu/drank-4.pdf',
+    src: 'drank-4.jpg',
     name: 'Wijn & Bubbels'
   },
   {
-    href: '/menu/kaart-inspire-4-5.pdf',
-    src: 'kaart-inspire-4-5.jpg',
+    href: '/menu/drank-5.pdf',
+    src: 'drank-5.jpg',
     name: 'Cocktails'
-  },
-  {
-    href: '/menu/kaart-inspire-4-6.pdf',
-    src: 'kaart-inspire-4-6.jpg',
-    name: 'Wijn & Bubbels'
-  },
-  {
-    href: '/menu/kaart-inspire-4-7.pdf',
-    src: 'kaart-inspire-4-7.jpg',
-    name: 'Wijn & Bubbels'
-  },
-  {
-    href: '/menu/kaart-inspire-4-8.pdf',
-    src: 'kaart-inspire-4-8.jpg',
-    name: 'Wijn & Bubbels'
   }
 ]
 </script>
@@ -74,13 +59,13 @@ const menukaarten = [
             target="_blank">
             <div class="space-y-2">
               <img
-                class="h-[450px] rounded-lg shadow-lg sm:transition-shadow sm:duration-200 sm:hover:shadow-xl"
+                class="h-[300px] rounded-lg shadow-lg sm:transition-shadow sm:duration-200 sm:hover:shadow-xl"
                 :src="getImageUrl(menukaart.src)"
-                :alt="menukaart.src" />
-              <!-- <span
+                :alt="menukaart.name" />
+              <span
                 class="inline-block w-full text-center font-semibold"
                 v-text="menukaart.name">
-              </span> -->
+              </span>
             </div>
           </a>
         </li>
