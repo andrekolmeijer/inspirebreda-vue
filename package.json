@@ -6,7 +6,8 @@
     "build": "vite build --mode development",
     "build:prod": "vite build",
     "preview": "vite preview --port 4173",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "convert-pdf": "node src/scripts/convertPdf.js"
   },
   "dependencies": {
     "@vueuse/core": "^8.9.2",
@@ -24,6 +25,7 @@
     "autoprefixer": "^10.4.7",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^9.0.0",
+    "ghostscript4js": "^3.2.1",
     "postcss": "^8.4.14",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.11",
