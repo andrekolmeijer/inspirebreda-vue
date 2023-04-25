@@ -1,3 +1,6 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+# All deploys from the Production branch
 [context.production]
   command = "npm run build:prod"
 
@@ -5,16 +8,8 @@
   NODE_ENV = "development"
   VITE_BASE_URL = "https://inspirebreda.nl"
 
-[context.development]
-  command = "npm run build"
-
-[context.development.environment]
-  NODE_ENV = "development"
-  VITE_BASE_URL = "https://development.inspirebreda.nl"
-
-[dev]
-  targetPort = 3000
-
+# All deploys that are not from
+# a pull/merge request or from the Production branch
 [context.branch-deploy]
   command = "npm run build"
 
@@ -22,9 +17,26 @@
   NODE_ENV = "development"
   VITE_BASE_URL = "https://development.inspirebreda.nl"
 
+# Environment variables set here
+# are available for local development environments
+# run using Netlify Dev
 [context.dev]
   command = "npm run build"
 
 [context.dev.environment]
   NODE_ENV = "development"
   VITE_BASE_URL = "https://development.inspirebreda.nl"
+
+# More specific branch context
+[context.development]
+  command = "npm run build"
+
+[context.development.environment]
+  NODE_ENV = "development"
+  VITE_BASE_URL = "https://development.inspirebreda.nl"
+
+# Set configuration overrides for local
+# development environments run using Netlify Dev - except
+# for environment variables
+[dev]
+  targetPort = 3000
