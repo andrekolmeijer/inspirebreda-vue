@@ -38,5 +38,5 @@
 # Set configuration overrides for local
 # development environments run using Netlify Dev - except
 # for environment variables
-# [dev]
-#   targetPort = 3000
+[dev]
+  targetPort = 3000
