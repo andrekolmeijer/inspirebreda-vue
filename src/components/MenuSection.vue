@@ -46,7 +46,7 @@ const menukaarten = [
     <div class="m-auto max-w-5xl pt-16 pb-8">
       <h2
         class="w-full pl-8 text-2xl font-black uppercase tracking-normal sm:px-8 sm:text-center">
-        MenukaartenTEST
+        Menukaarten
       </h2>
       <ul
         class="flex snap-x snap-mandatory gap-6 overflow-x-auto py-8 scrollbar-hide sm:grid sm:grid-cols-2 sm:gap-9 sm:overflow-x-hidden sm:px-8 lg:grid-cols-3">
