@@ -15,9 +15,9 @@
 [dev]
   targetPort = 3000
 
-[context."feat/**"]
+[context."feat/*"]
   command = "npm run build"
 
-[context."feat/**".environment]
+[context."feat/*".environment]
   NODE_ENV = "development"
   VITE_BASE_URL = "https://development.inspirebreda.nl"
