@@ -3,7 +3,6 @@ import InstagramCall from './InstagramCall.vue'
 import PhotoGrid from './PhotoGrid.vue'
 import WelcomeText from './WelcomeText.vue'
 import WelcomeBanner from './WelcomeBanner.vue'
-import WelcomeAlert from './WelcomeAlert.vue';
 </script>
 
 <template>
