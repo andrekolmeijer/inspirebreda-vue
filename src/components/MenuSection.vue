@@ -7,33 +7,48 @@ function getImageUrl(name) {
 
 const menukaarten = [
   {
-    href: '/menu/lunch-1.pdf',
-    src: 'lunch-1.jpg',
+    href: '/menu/kaart-inspire-4-1.pdf',
+    src: 'kaart-inspire-4-1.jpg',
     name: 'Lunchkaart'
   },
   {
-    href: '/menu/drank-1.pdf',
-    src: 'drank-1.jpg',
+    href: '/menu/kaart-inspire-4-2.pdf',
+    src: 'kaart-inspire-4-2.jpg',
     name: 'Koffie & Warm'
   },
   {
-    href: '/menu/drank-2.pdf',
-    src: 'drank-2.jpg',
+    href: '/menu/kaart-inspire-4-9.pdf',
+    src: 'kaart-inspire-4-9.jpg',
     name: 'Sap & Frisdrank'
   },
   {
-    href: '/menu/drank-3.pdf',
-    src: 'drank-3.jpg',
+    href: '/menu/kaart-inspire-4-3.pdf',
+    src: 'kaart-inspire-4-3.jpg',
     name: 'Bierkaart'
   },
   {
-    href: '/menu/drank-4.pdf',
-    src: 'drank-4.jpg',
+    href: '/menu/kaart-inspire-4-4.pdf',
+    src: 'kaart-inspire-4-4.jpg',
     name: 'Wijn & Bubbels'
   },
   {
-    href: '/menu/drank-5.pdf',
-    src: 'drank-5.jpg',
+    href: '/menu/kaart-inspire-4-5.pdf',
+    src: 'kaart-inspire-4-5.jpg',
+    name: 'Cocktails'
+  },
+  {
+    href: '/menu/kaart-inspire-4-6.pdf',
+    src: 'kaart-inspire-4-6.jpg',
+    name: 'Cocktails'
+  },
+  {
+    href: '/menu/kaart-inspire-4-7.pdf',
+    src: 'kaart-inspire-4-7.jpg',
+    name: 'Cocktails'
+  },
+  {
+    href: '/menu/kaart-inspire-4-8.pdf',
+    src: 'kaart-inspire-4-8.jpg',
     name: 'Cocktails'
   }
 ]
@@ -42,31 +57,25 @@ const menukaarten = [
 <template>
   <section
     id="menu"
-    class="bg-inspire-orange text-inspire-white">
-    <div class="m-auto max-w-5xl pt-16 pb-8">
+    class="bg-inspire-orange text-inspire-white overflow-x-auto">
+    <div class="m-auto pt-16 pb-8 overflow-x-auto">
       <h2
         class="w-full pl-8 text-2xl font-black uppercase tracking-normal sm:px-8 sm:text-center">
         Menukaarten
       </h2>
       <ul
-        class="flex snap-x snap-mandatory gap-6 overflow-x-auto py-8 scrollbar-hide sm:grid sm:grid-cols-2 sm:gap-9 sm:overflow-x-hidden sm:px-8 lg:grid-cols-3">
+        class="flex snap-x snap-mandatory gap-6 overflow-x-auto py-8 scrollbar-hide z-50 relative">
         <li
           v-for="(menukaart, index) in menukaarten"
           :key="index"
-          class="first:snap-start first:pl-8 sm:first:pl-0 flex h-full flex-shrink-0 snap-center snap-always justify-center last:snap-end last:pr-8 sm:transition-transform sm:duration-200 sm:last:pr-0 sm:hover:scale-105">
+          class="lg:first:pl-snap first:snap-start first:pl-8 flex h-full flex-shrink-0 snap-center snap-always justify-center last:snap-end last:pr-8">
           <a
             :href="menukaart.href"
             target="_blank">
-            <div class="space-y-2">
-              <img
-                class="h-[300px] rounded-lg shadow-lg sm:transition-shadow sm:duration-200 sm:hover:shadow-xl"
-                :src="getImageUrl(menukaart.src)"
-                :alt="menukaart.name" />
-              <span
-                class="inline-block w-full text-center font-semibold"
-                v-text="menukaart.name">
-              </span>
-            </div>
+            <img
+              class="h-[450px] rounded-lg shadow-lg sm:h-auto sm:w-[550px]"
+              :src="getImageUrl(menukaart.src)"
+              :alt="menukaart.src" />
           </a>
         </li>
       </ul>
