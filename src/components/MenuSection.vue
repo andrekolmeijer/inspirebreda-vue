@@ -59,10 +59,13 @@ const menukaarten = [
     id="menu"
     class="bg-inspire-orange text-inspire-white overflow-x-auto">
     <div class="m-auto pt-16 pb-8 overflow-x-auto">
-      <h2
-        class="w-full pl-8 text-2xl font-black uppercase tracking-normal sm:px-8 sm:text-center">
-        Menukaarten
-      </h2>
+      <div class="flex items-center space-x-6">
+        <h2
+          class="pl-8 text-2xl font-black uppercase tracking-normal lg:ml-auto">
+          Menukaarten
+        </h2>
+        <span class="font-medium italic">Swipe Links <span class="hidden sm:inline-block">/ Shift + Scroll</span></span>
+      </div>
       <ul
         class="flex snap-x snap-mandatory gap-6 overflow-x-auto py-8 scrollbar-hide z-50 relative">
         <li
