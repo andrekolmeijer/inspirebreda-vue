@@ -1,7 +1,6 @@
 <script setup>
 import { useDataStore } from '../stores/DataStore'
 import IconFacebook from './icons/IconFacebook.vue'
-import IconTwitter from './icons/IconTwitter.vue'
 import IconInstagram from './icons/IconInstagram.vue'
 import FooterHeading from './FooterHeading.vue'
 
@@ -22,7 +21,6 @@ const { socials } = useDataStore()
             target="_blank"
             :aria-label="social.label">
             <IconFacebook v-if="social.label == 'facebook'" />
-            <IconTwitter v-if="social.label == 'twitter'" />
             <IconInstagram v-if="social.label == 'instagram'" />
           </a>
         </li>

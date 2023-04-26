@@ -19,10 +19,6 @@ export const useDataStore = defineStore('DataStore', {
         label: 'facebook'
       },
       {
-        href: 'https://twitter.com/inspirecoffee',
-        label: 'twitter'
-      },
-      {
         href: 'https://www.instagram.com/inspirebreda/',
         label: 'instagram'
       }
