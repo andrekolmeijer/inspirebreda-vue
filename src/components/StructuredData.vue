@@ -58,12 +58,15 @@
             }
           ],
           "hasMenu": [
-            "https://inspirebreda.nl/menu/lunch-11.pdf",
-            "https://inspirebreda.nl/menu/drank-11.pdf",
-            "https://inspirebreda.nl/menu/drank-12.pdf",
-            "https://inspirebreda.nl/menu/drank-13.pdf",
-            "https://inspirebreda.nl/menu/drank-14.pdf",
-            "https://inspirebreda.nl/menu/drank-15.pdf"
+            "https://inspirebreda.nl/menu/kaart-inspire-4-1.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-2.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-9.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-3.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-4.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-5.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-6.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-7.pdf",
+            "https://inspirebreda.nl/menu/kaart-inspire-4-8.pdf"
           ]
         }
       ]
