@@ -2,11 +2,13 @@
 import { RouterView } from 'vue-router'
 import IconContact from './components/icons/IconContact.vue'
 import smoothscroll from 'smoothscroll-polyfill'
+import WelcomeAlert from './components/WelcomeAlert.vue';
 
 smoothscroll.polyfill()
 </script>
 
 <template>
+  <WelcomeAlert />
   <header class="m-auto flex max-w-5xl items-center justify-between p-8">
     <div class="h-14">
       <img

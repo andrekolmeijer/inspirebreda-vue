@@ -8,7 +8,6 @@ import WelcomeAlert from './WelcomeAlert.vue';
 
 <template>
   <section class="m-auto max-w-5xl text-inspire-brown-dark">
-    <WelcomeAlert class="mx-4 sm:mx-8 mb-8" />
     <WelcomeBanner class="sm:mx-8" />
     <WelcomeText class="mx-8 mt-8" />
     <div class="sm:mx-8">
