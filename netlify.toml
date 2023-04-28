@@ -35,6 +35,13 @@
   NODE_ENV = "development"
   VITE_BASE_URL = "https://development.inspirebreda.nl"
 
+[context.split-test]
+  command = "npm run build:prod"
+
+[context.split-test.environment]
+  NODE_ENV = "development"
+  VITE_BASE_URL = "https://inspirebreda.nl"
+
 # Set configuration overrides for local
 # development environments run using Netlify Dev - except
 # for environment variables
