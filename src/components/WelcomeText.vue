@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="w-2/3 pt-8 text-3xl font-black uppercase tracking-normal">
-      Welkom bij <span class="text-inspire-orange">Inspire</span>
+      Belkom bij <span class="text-inspire-orange">Inspire</span>
     </h1>
     <p class="gap-8 py-8 text-base font-light hyphens-auto sm:columns-2">
       Met uitzicht op de Grote Markt van Breda genieten van de lekkerste koffie,
