@@ -7,7 +7,7 @@
         {
           "@type": "CafeOrCoffeeShop",
           "name": "Inspire Coffee Company",
-          "logo": "https://inspirebreda.nl/img/inspire-logo-small.png",
+          "logo": "https://inspirebreda.nl/img/inspire-logo-orange-dark-brown.svg",
           "image": [
             "https://inspirebreda.nl/img/carousel-1.jpg",
             "https://inspirebreda.nl/img/carousel-2.jpg",
