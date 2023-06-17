@@ -15,16 +15,16 @@ export const useDataStore = defineStore('DataStore', {
     openingstijdenNotitie: { notitie: '*Met mooi weer regelmatig langer open.' },
     socials: [
       {
-        href: 'https://www.facebook.com/inspirecoffeecompany/',
+        href: 'https://www.facebook.com/debasisbreda/',
         label: 'facebook'
       },
       {
-        href: 'https://www.instagram.com/inspirebreda/',
+        href: 'https://www.instagram.com/debasisbreda/',
         label: 'instagram'
       }
     ],
     contact: {
-      bedrijfsnaam: 'Inspire Coffee Company',
+      bedrijfsnaam: 'De Basis',
       adres: 'Veemarktstraat 4',
       postcode: '4811ZE',
       plaats: 'Breda',
