@@ -8,11 +8,11 @@ import InstagramButton from './InstagramButton.vue'
     <p class="font-light tracking-wide">
       Volg
       <a
-        href="https://www.instagram.com/inspirebreda/"
+        href="https://www.instagram.com/debasisbreda/"
         target="_blank"
         aria-label="instagram"
         class="bg-gradient-to-r from-amber-500 via-pink-500 to-indigo-500 bg-clip-text font-medium text-transparent">
-        @inspirebreda</a
+        @debasisbreda</a
       >
       om als eerste op de hoogte te zijn van onze acties, specials en
       ontwikkelingen!
