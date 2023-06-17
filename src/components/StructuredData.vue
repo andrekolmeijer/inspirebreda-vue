@@ -67,26 +67,6 @@
             "https://inspirebreda.nl/menu/kaart-inspire-4-7.pdf",
             "https://inspirebreda.nl/menu/kaart-inspire-4-8.pdf"
           ]
-        },
-        {
-          "@type": "SpecialAnnouncement",
-          "name": "Gesloten wegens verbouwing.",
-          "text": "Let op: i.v.m. de verbouwing van de begane grond zijn we 1 t/m 17 mei gesloten. Volg onze socials voor updates!",
-          "datePosted": "2023-04-26T08:00",
-          "expires": "2023-05-17T23:59",
-          "announcementLocation": {
-            "@type": "CafeOrCoffeeShop",
-            "name": "Inspire Coffee Company",
-            "image" : "https://inspirebreda.nl/img/banner-mobile.jpg",
-            "url": "https://inspirebreda.nl",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Veemarktstraat 4",
-              "addressLocality": "Breda",
-              "postalCode": "4811 ZE"
-            },
-            "telephone": "+31765153272"
-          }
         }
       ]
     }
