@@ -32,8 +32,7 @@
           "url": "https://inspirebreda.nl",
           "sameAs": [
             "https://www.instagram.com/inspirebreda/",
-            "https://www.facebook.com/inspirecoffeecompany/",
-            "https://twitter.com/inspirecoffee"
+            "https://www.facebook.com/inspirecoffeecompany/"
           ],
           "telephone": "+31765153272",
           "email": "breda@inspirecoffee.com",
