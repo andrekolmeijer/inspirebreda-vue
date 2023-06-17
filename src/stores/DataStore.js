@@ -24,7 +24,7 @@ export const useDataStore = defineStore('DataStore', {
       }
     ],
     contact: {
-      bedrijfsnaam: 'De Basis',
+      bedrijfsnaam: 'Inspire Coffee Company',
       adres: 'Veemarktstraat 4',
       postcode: '4811ZE',
       plaats: 'Breda',
